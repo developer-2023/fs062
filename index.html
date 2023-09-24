@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elements - exercise</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        p::first-letter {
+            font-weight: bold;
+            color: green;
+        }
+        p:nth-child(2)::first-line {
+            color: yellow;
+        }
+        p:last-child::after {
+            content: " NEWS";
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis odit recusandae qui quae temporibus labore vitae aut, ipsum hic praesentium, tempore ut sit quia modi beatae ea est cupiditate dolor voluptas tenetur porro at? In tempora velit debitis, inventore, itaque, sequi fugiat maiores qui alias voluptatum quo. Iure, voluptas consequuntur?</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </article>
+</body>
+</html>
